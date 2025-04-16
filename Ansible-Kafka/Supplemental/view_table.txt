@@ -1,0 +1,12 @@
+﻿SELECT ae.Id, ae.Topic,ae.Partition, ae.Offset,ae.Timestamp, ae.[Key], v.*, ae.LoadDate 
+FROM [PROTO].[ETL].[AnsibleEvents] (NOLOCK) ae
+   CROSS APPLY OPENJSON(ae.[Value])
+   WITH (
+	Event NVARCHAR(200) '$.event',
+    [TimeStamp] NVARCHAR(200)  '$.timestamp',
+    Playbook NVARCHAR(200) '$.playbook',
+    Task NVARCHAR(500)  '$.task',
+	Host NVARCHAR(500)  '$.host'
+) v
+where v.Playbook = 'cat_file.yml'
+ order by v.Host, v.[TimeStamp]

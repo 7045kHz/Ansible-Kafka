@@ -1,0 +1,30 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35919.96
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8EC462FD-D22E-90A8-E5CE-7E832BA40C5D}"
+	ProjectSection(SolutionItems) = preProject
+		papicli.env = papicli.env
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KafkaLogger", "Ansible-Kafka\KafkaLogger.csproj", "{8A1C8022-CD26-330E-701F-A3ED4DDAAC69}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8A1C8022-CD26-330E-701F-A3ED4DDAAC69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A1C8022-CD26-330E-701F-A3ED4DDAAC69}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A1C8022-CD26-330E-701F-A3ED4DDAAC69}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A1C8022-CD26-330E-701F-A3ED4DDAAC69}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E8FBE8A8-4EB2-4C14-9D2D-D20BFFF19340}
+	EndGlobalSection
+EndGlobal
